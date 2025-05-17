@@ -1,0 +1,117 @@
+.custom-input {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.custom-input--error .custom-input__error {
+    display: block;
+}
+
+.custom-input--error .custom-input__field {
+    border-color: #E80E0A;
+    
+}
+
+.custom-input--error .custom-input__field:hover,
+.custom-input--error .custom-input__field:focus-visible {
+    border-color: #E80E0A;
+    
+}
+
+.custom-input__field {
+    width: 100%;
+    max-height: 56px;
+    border: 1px solid #D6D2C4;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    color: #1D252D;
+    font-family: inherit;
+    padding: 18px 20px;
+
+}
+
+
+.custom-input__field:hover {
+    border-color: #1D252D;
+}
+
+
+
+.custom-input__field:focus-visible {
+    border-color: #1D252D;
+    outline: none;
+}
+
+
+
+.custom-input__label {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    color: #1D252D;
+    position: absolute;
+    background-color: #FFFFFF;
+    left: 12px;
+    top: 0;
+    transform: translateY(-50%);
+    user-select: none;
+    padding: 0 8px;
+}
+
+.custom-input__icon-wrapper {
+    height: 28px;
+    width: 28px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.custom-input__icon {
+    color: #D6D2C4;
+}
+
+
+.custom-input:hover .custom-input__icon,
+.custom-input:focus-within .custom-input__icon {
+    color: #757576;
+}
+
+.custom-input--error .custom-input__icon {
+    color: #F26F6C;
+}
+
+
+.custom-input--error .custom-input__field:hover ~ .custom-input__icon-wrapper .custom-input__icon {
+    color: #F26F6C;
+}
+
+.custom-input--error .custom-input__field:focus-visible ~ .custom-input__icon-wrapper .custom-input__icon {
+    color: #F26F6C;
+}
+.custom-input__field[disabled] {
+    border-color: #E9E9E9;
+    background-color: #FAFAFA;
+}
+
+.custom-input__field[disabled]+.custom-input__label {
+    color: rgba(29, 37, 45, 0.5);
+
+}
+
+
+.custom-input__error {
+    color: #E80E0A;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    position: absolute;
+    bottom: -50%;
+    transform: translateY(-50%);
+}

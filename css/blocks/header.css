@@ -1,0 +1,31 @@
+.header {
+  min-height: 80px;
+  padding: 23px 28px;
+  border-bottom: 1px solid #e2e2e2;
+  background-color: #FFFFFF;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+.header__content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.header__menu {
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  width: 60px;
+  height: 23px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  transform: translateY(-50%);
+}
+
+.header__logo {
+  color: #1D252D;
+}

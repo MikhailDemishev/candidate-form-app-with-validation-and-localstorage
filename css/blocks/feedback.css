@@ -1,0 +1,36 @@
+.feedback {
+    margin: 0 0 70px;
+}
+
+.feedback__wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.feedback__top {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 58px;
+}
+
+.feedback__title {
+    font-weight: 200;
+    font-size: 48px;
+    line-height: 58px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.feedback__text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 9px 0 9px;
+    text-align: right;
+
+}
+ 

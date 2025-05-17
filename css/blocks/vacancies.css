@@ -1,0 +1,80 @@
+.vacancies {
+    margin: 40px 0 120px;
+}
+.vacancies__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.vacancies__top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.vacancies__title {
+    margin: 0;
+    font-weight: 200;
+    font-size: 60px;
+    line-height: 72px;
+    text-transform: uppercase;
+    margin: 0 0 7px;
+
+}
+
+.vacancies__feedback {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;    
+    gap: 5px;
+}
+
+.vacancies__feedback-text {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    color: #1D252D;
+
+}
+
+.vacancies__feedback-contacts {
+    display: flex;
+    gap: 10px;
+}
+
+.vacancies__feedback-phone,
+.vacancies__feedback-email {
+    color: #1D252D;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+
+}
+
+.vacancies__feedback-phone:hover {
+    text-decoration: underline;
+    text-decoration-style: solid;
+    
+}
+
+
+
+.vacancies__feedback-line {
+    border: none;
+    border-left: 1px solid #1D252D
+}
+
+.vacancies__feedback-send {
+    color: #1D252D;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    margin: auto 0 0;
+}
+ 
+.vacancies__feedback-send:hover {
+    color: rgba(29, 37, 45, 0.5);
+
+}

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Вакансии - Sminex - ИНТЕКО</title>
+  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__content">
+      <button class="header__menu" aria-label="Переключаетель меню">
+        <svg class="header__burger-icon" width="60" height="23" aria-hidden="true">
+          <use xlink:href="images/sprite.svg#icon-burger"></use>
+        </svg>
+      </button>
+      <a class="header__logo-link" href="#" aria-label="Переход на главную страницу Sminex">
+        <svg class="header__logo" width="115" height="27" aria-hidden="true">
+          <use xlink:href="images/sprite.svg#icon-logo"></use>
+        </svg>
+      </a>
+    </div>
+  </header>
+  <main>
+    <!-- Вакансии -->
+    <section class="vacancies">
+      <div class="container">
+        <div class="vacancies__wrapper">
+          <div class="vacancies__top">
+            <h2 class="vacancies__title">вакансии</h2>
+            <div class="vacancies__feedback">
+              <span class="vacancies__feedback-text">Контакты HR-отдела</span>
+              <span class="vacancies__feedback-contacts">
+                <a class="vacancies__feedback-phone" href="tel:+74954878808" aria-label="Телефон работодателя">+7 (495)
+                  487-88-08</a>
+                <span class="vacancies__feedback-line"></span>
+                <a class="vacancies__feedback-email" href="mailto:hr@sminex.com"
+                  aria-label="Почта работодателя">hr@sminex.com</a>
+              </span>
+              <a class="vacancies__feedback-send" href="#" aria-label="Отправить резюме">Отправить резюме</a>
+            </div>
+          </div>
+          <ul class="vacancies__list">
+            <li class="vacancies__list-item">
+              <span class="vacancies__list-vacancy">руководитель группы продаж через sminex club</span>
+              <span class="vacancies__list-salary">240 000 руб.</span>
+            </li>
+            <li class="vacancies__list-item">
+              <span class="vacancies__list-vacancy">руководитель группы архитекторов (планировочные решения)</span>
+              <span class="vacancies__list-salary">от 230 000 до 345 000 руб.</span>
+            </li>
+            <li class="vacancies__list-item">
+              <span class="vacancies__list-vacancy">администратор ресепшен/секретарь</span>
+              <span class="vacancies__list-salary">от 65 000 до 85 000 руб.</span>
+            </li>
+            <li class="vacancies__list-item">
+              <span class="vacancies__list-vacancy">ведущий специалист по закупкам (отделочные материалы)</span>
+              <span class="vacancies__list-salary">от 195 000 до 290 000 руб.</span>
+            </li>
+            <li class="vacancies__list-item">
+              <span class="vacancies__list-vacancy">ведущий специалист по закупкам (инженерное оборудование)</span>
+              <span class="vacancies__list-salary">от 190 000 до 290 000 руб.</span>
+            </li>
+            <li class="vacancies__list-item">
+              <span class="vacancies__list-vacancy">начальник отдела проектирования кр (проектное бюро)</span>
+              <span class="vacancies__list-salary">з/п по итогам собеседования</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!--Форма отправки резюме-->
+    <section class="feedback">
+      <div class="container">
+        <div class="feedback__wrapper">
+          <div class="feedback__top">
+            <h2 class="feedback__title">отправить резюме</h2>
+            <p class="feedback__text">
+              <span class="feedback__text-line">Мы&nbsp;свяжемся с&nbsp;вами, когда появится</span>
+              <span class="feedback__text-line">подходящая вакансия</span>
+            </p>
+          </div>
+          <form class="feedback-form" id="feedback-form" action="#" method="POST">
+            <div class="feedback-form__inner">
+              <div class="custom-input">
+                <input class="custom-input__field" type="text" name="candidate-name" id="candidate-name">
+                <label class="custom-input__label" for="candidate-name">Имя*</label>
+              </div>
+              <div class="custom-input">
+                <input class="custom-input__field" type="tel" name="candidate-phone" id="candidate-phone">
+                <label class="custom-input__label" for="candidate-phone">Телефон*</label>
+              </div>
+              <div class="custom-input">
+                <input class="custom-input__field" type="text" name="candidate-secname" id="candidate-secname">
+                <label class="custom-input__label" for="candidate-secname">Фамилия*</label>
+              </div>
+              <div class="custom-input">
+                <input class="custom-input__field" type="email" name="candidate-email" id="candidate-email">
+                <label class="custom-input__label" for="candidate-email">E-mail*</label>
+                <span class="custom-input__icon-wrapper">
+                  <svg class="custom-input__icon" width="24" height="18" aria-hidden="true">
+                    <use href="images/sprite.svg#icon-email"></use>
+                  </svg>
+                </span>
+              </div>
+              <div class="custom-input">
+                <input class="custom-input__field" type="text" name="candidate-position" id="candidate-position"
+                  placeholder="Введите название или щелкните на вакансию из списка выше">
+                <label class="custom-input__label" for="candidate-position">Желаемая должность*</label>
+              </div>
+              <div class="custom-input">
+                <input class="custom-input__field" type="url" name="candidate-cv" id="candidate-cv">
+                <label class="custom-input__label" for="candidate-cv">Ссылка на резюме*</label>
+                <!--
+                <span class="custom-input__error">Данное поле должно быть заполнено</span>
+                -->
+                <span class="custom-input__icon-wrapper">
+                  <svg class="custom-input__icon" width="28" height="28" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-link"></use>
+                  </svg>
+                </span>
+              </div>
+            </div>
+            <div class="custom-checkbox">
+              <input class="custom-checkbox__field visually-hidden" type="checkbox" id="candidate-true"
+                name="client-true">
+              <label class="custom-checkbox__label" for="candidate-true">
+                <span class="custom-checkbox__text">Даю согласие на обработку <a class="custom-checkbox__link"
+                    href="#">персональных данных</a></span>
+                <svg class="custom-checkbox__icon" width="10" height="8">
+                  <use xlink:href="images/sprite.svg#checked"></use>
+                </svg>
+              </label>
+            </div>
+            <button class="feedback-form__btn btn btn--size-xl" type="submit" disabled>Отправить заявку</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="output">
+      <div class="output__wrapper">
+        <h2 class="output__title">База кандидатов</h2>
+        <table class="output__table" id="candidate-table">
+          <thead class="output__table-head" tabindex="-1">
+            <tr class="output__table-row">
+              <th class="output__table-header-cell">№ п/п</th>
+              <th class="output__table-header-cell" data-field="candidate-secname">
+                <div class="output__table-header-cell-wrapper">
+                  <span class="output__table-header-cell-title">
+                    Фамилия кандидата
+                  </span>
+                  <div class="output__table-header-cell-sort">
+                    <button class="output__table-header-cell-sort-up" type="button">▲</button>
+                    <button class="output__table-header-cell-sort-down" type="button">▼</button>
+                  </div>
+                </div>
+              </th>
+              <th class="output__table-header-cell">Имя кандидата</th>
+              <th class="output__table-header-cell" data-field="candidate-position">
+                <div class="output__table-header-cell-wrapper">
+                  <span class="output__table-header-cell-title">
+                    Желаемая должность
+                  </span>
+                  <div class="output__table-header-cell-sort">
+                    <button class="output__table-header-cell-sort-up" type="button">▲</button>
+                    <button class="output__table-header-cell-sort-down" type="button">▼</button>
+                  </div>
+                </div>
+              </th>
+              <th class="output__table-header-cell">Телефон</th>
+              <th class="output__table-header-cell">Email</th>
+              <th class="output__table-header-cell">Ссылка на резюме</th>
+              <th class="output__table-header-cell">Действия</th>
+            </tr>
+          </thead>
+          <tbody class="output__table-body" id="candidate-tbody">
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <div class="cookie">
+      <p class="cookie__text">
+        Мы&nbsp;используем файлы cookie для улучшения работы этого сайта. Для получения дополнительной информации
+        ознакомьтесь с&nbsp;<a class="cookie__link" href="#">нашей Политикой конфиденциальности</a></p>
+      <a href="#" class="cookie__btn btn">Подробнее</a>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <a class="footer__logo-link" href="#" aria-label="Переход на главную страницу Sminex">
+          <svg class="footer__logo" width="115" height="27" aria-hidden="true">
+            <use xlink:href="images/sprite.svg#icon-logo"></use>
+          </svg>
+        </a>
+        <div class="footer__nav">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#">Коротко о нас</a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#">Создаем уникальные проекты</a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#">Служба комфорта</a>
+            </li>
+          </ul>
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#">Работодатель №1</a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#">Информационный центр</a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#">Sminex Club</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="index.js"></script>
+</body>
+
+</html>

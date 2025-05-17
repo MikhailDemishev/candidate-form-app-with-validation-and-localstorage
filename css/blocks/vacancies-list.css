@@ -1,0 +1,35 @@
+.vacancies__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.vacancies__list-item {
+    width: 100%;
+    padding: 28px;
+    max-height: 80px;
+    border: none;
+    border-top: 1px solid #D6D2C4;
+    border-bottom: 1px solid #D6D2C4;
+    display: flex;
+    justify-content: space-between;
+}
+
+.vacancies__list-item:hover {
+    background-color: rgba(214, 210, 196, 0.2);
+}
+
+.vacancies__list-vacancy {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.vacancies__list-salary {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+}

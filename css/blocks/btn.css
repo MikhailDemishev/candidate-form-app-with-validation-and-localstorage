@@ -1,0 +1,56 @@
+.btn {
+  background-color: #D6D2C4;
+  border: 1px solid #D6D2C4;
+  border-radius: 40px;
+  color: #1D252D;
+  cursor: pointer;
+  display: block;
+  font-family: "IBM Plex Sans", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  padding: 9px 20px;
+  width: 100%;
+
+}
+
+.btn--size-xl {
+  font-size: 16px;
+  line-height: 20px;
+  padding: 18px;
+  width: 320px;
+}
+
+.btn--small {
+  font-size: 12px;
+  line-height: 16px;
+  padding: 10px;
+  width: 100px;
+}
+
+.btn--delete {
+    background-color: #72c24a;
+}
+
+.btn--edit {
+    background-color: #c5872a;
+}
+
+.btn:hover {
+  background-color: #1D252D;
+  color: #FFFFFF;
+}
+
+
+.btn:focus-visible {
+  background-color: #0E1114;
+  color: #FFFFFF;
+}
+
+.btn:disabled {
+  border: 1px solid rgba(214, 210, 196, 0.5);
+  color: rgba(29, 37, 45, 0.5);
+  background-color: rgba(214, 210, 196, 0.5);
+
+}
